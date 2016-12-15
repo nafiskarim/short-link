@@ -2,12 +2,13 @@ import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
 import Header from './components/Header'
+import LinkCreate from './components/LinkCreate'
 
 const App = () => {
   return (
     <div>
       <Header />
-      <h1>hello short link</h1>
+      <LinkCreate />
     </div>
   )
 }
