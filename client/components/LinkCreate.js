@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
 
 class LinkCreate extends Component {
+  handleSubmit(event){
+    event.preventDefault()
+
+    console.log(this.refs.input.value);
+  }
+
   render () {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit.bind(this)}>
         <div className="form-group">
-          <input className="form-control" />
+          <input ref="input" className="form-control" />
         </div>
         <button className="btn btn-primary"> Shorten </button>
       </form>
